@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json.schemastore.org/jsconfig",
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "es6",
+		"lib": ["dom", "esnext"],
+		"moduleResolution": "bundler",
+		"noImplicitAny": false,
+		"noImplicitThis": true,
+		"allowJs": true,
+		"checkJs": true,
+		"disableReferencedProjectLoad": true,
+		"strict": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": false,
+		"forceConsistentCasingInFileNames": false,
+		"newLine": "lf"
+	},
+	"display": "Recommended",
+	"include": ["**/*.mjs", "foundry/"],
+	"exclude": ["node_modules", "foundry/node_modules"]
+}

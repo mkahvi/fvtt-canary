@@ -1,0 +1,20 @@
+{
+	"id": "canary",
+	"title": "Canary",
+	"description": "Canary, for testing if things fail.",
+	"version": "1.0",
+	"esmodules": ["canary.mjs"],
+	"styles": ["canary.css"],
+  "documentTypes": {
+    "Actor": {
+      "canary": {}
+    },
+    "Item": {
+      "canary": {}
+    }
+  },
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13
+  }
+}
