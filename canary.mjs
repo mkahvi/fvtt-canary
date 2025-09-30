@@ -24,3 +24,12 @@ Hooks.once("init", () => {
     }
   )
 });
+
+Hooks.once("ready", async () => {
+  // Tours
+  game.tours.register(
+    "canary",
+    "on-sheet-open",
+    await foundry.nue.Tour.fromJSON("systems/canary/tours/broken.json")
+  );
+});

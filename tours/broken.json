@@ -1,0 +1,13 @@
+{
+  "title": "Bugged",
+  "display": true,
+  "canBeResumed": false,
+  "steps": [
+    {
+      "id": "intro",
+      "selector": "section.window-content",
+      "title": "Hi",
+      "content": "Bye?"
+    }
+  ]
+}
