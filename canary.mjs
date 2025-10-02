@@ -7,7 +7,8 @@ Hooks.once("init", () => {
   foundry.applications.apps.DocumentSheetConfig.registerSheet(
     getDocumentClass("Actor"),
     game.system.id,
-    api.actors.apps.CanaryActorSheet,
+    //api.actors.apps.CanaryActorSheet, // AppV2
+    api.actors.apps.CanaryActorSheetV1,
     {
       makeDefault: true,
       types: ["canary"]

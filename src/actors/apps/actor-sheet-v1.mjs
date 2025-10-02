@@ -1,17 +1,15 @@
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
 
-export class CanaryActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
-  static PARTS = {
-    main: {
-      template: "systems/canary/templates/actor/sheet.hbs"
-    }
+export class CanaryActorSheetV1 extends ActorSheet {
+  get template() {
+    return "systems/canary/templates/actor/sheet.hbs";
   }
 
-  _onRender(options) {
-    super._onRender(options);
+  activateListeners(jq) {
+    super.activateListeners(jq);
 
-    const html = this.element.querySelector(".window-content");
+    const html = jq[0];
 
     html.addEventListener("pointerenter", this._onPointerEnter.bind(this), {
       passive: true,
