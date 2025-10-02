@@ -5,7 +5,7 @@
   "steps": [
     {
       "id": "intro",
-      "selector": "section.window-content",
+      "selector": ".window-content",
       "title": "Hi",
       "content": "Bye?"
     }

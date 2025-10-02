@@ -3,7 +3,7 @@ const { ActorSheetV2 } = foundry.applications.sheets;
 
 export class CanaryActorSheetV1 extends ActorSheet {
   get template() {
-    return "systems/canary/templates/actor/sheet.hbs";
+    return "systems/canary/templates/actor/sheet-v1.hbs";
   }
 
   activateListeners(jq) {
